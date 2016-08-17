@@ -5,6 +5,22 @@
    <BuildAction
       parallelizeBuildables = "YES"
       buildImplicitDependencies = "YES">
+      <BuildActionEntries>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "0E4F68161D6306D900666BBB"
+               BuildableName = "Alyaoum24-IOS.app"
+               BlueprintName = "Alyaoum24-IOS"
+               ReferencedContainer = "container:Alyaoum24-IOS.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+      </BuildActionEntries>
    </BuildAction>
    <TestAction
       buildConfiguration = "Debug"
@@ -12,7 +28,36 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "0E4F682A1D6306D900666BBB"
+               BuildableName = "Alyaoum24-IOSTests.xctest"
+               BlueprintName = "Alyaoum24-IOSTests"
+               ReferencedContainer = "container:Alyaoum24-IOS.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "0E4F68351D6306D900666BBB"
+               BuildableName = "Alyaoum24-IOSUITests.xctest"
+               BlueprintName = "Alyaoum24-IOSUITests"
+               ReferencedContainer = "container:Alyaoum24-IOS.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "0E4F68161D6306D900666BBB"
+            BuildableName = "Alyaoum24-IOS.app"
+            BlueprintName = "Alyaoum24-IOS"
+            ReferencedContainer = "container:Alyaoum24-IOS.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </TestAction>
@@ -26,6 +71,16 @@
       debugDocumentVersioning = "YES"
       debugServiceExtension = "internal"
       allowLocationSimulation = "YES">
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "0E4F68161D6306D900666BBB"
+            BuildableName = "Alyaoum24-IOS.app"
+            BlueprintName = "Alyaoum24-IOS"
+            ReferencedContainer = "container:Alyaoum24-IOS.xcodeproj">
+         </BuildableReference>
+      </BuildableProductRunnable>
       <AdditionalOptions>
       </AdditionalOptions>
    </LaunchAction>
@@ -35,6 +90,16 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "0E4F68161D6306D900666BBB"
+            BuildableName = "Alyaoum24-IOS.app"
+            BlueprintName = "Alyaoum24-IOS"
+            ReferencedContainer = "container:Alyaoum24-IOS.xcodeproj">
+         </BuildableReference>
+      </BuildableProductRunnable>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">

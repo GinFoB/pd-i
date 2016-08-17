@@ -1,0 +1,6 @@
+framework module Pods_Alyaoum24_IOS {
+  umbrella header "Pods-Alyaoum24-IOS-umbrella.h"
+
+  export *
+  module * { export * }
+}

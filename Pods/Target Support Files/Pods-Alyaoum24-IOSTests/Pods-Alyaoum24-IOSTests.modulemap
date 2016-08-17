@@ -1,0 +1,6 @@
+framework module Pods_Alyaoum24_IOSTests {
+  umbrella header "Pods-Alyaoum24-IOSTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
