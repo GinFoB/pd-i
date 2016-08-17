@@ -14,21 +14,23 @@ class RealmPost {
 
     dynamic var _id:String?
     dynamic var _title:String?
-    private dynamic var _content:String?
-    private dynamic var _category:String?
-    private dynamic var _created_at:String?
+     dynamic var _content:String?
+     dynamic var _category:String?
+     dynamic var _created_at:String?
     
-    private var _date:String?
-    private var _url:String?
-    private var _url_thumb:String?
-    private var _type:String?
+     var _date:String?
+     var _url:String?
+     var _url_thumb:String?
+     var _type:String?
     
     init(){
         
     }
     
-    init(title:String){
+    init(title:String,image:String,content:String){
         self._title = title
+        self._url_thumb = image
+        self._content = content
     }
    
 

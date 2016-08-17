@@ -22,6 +22,7 @@
 		0E4F68591D630EC000666BBB /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E4F68581D630EC000666BBB /* Constant.swift */; };
 		0E4F685B1D63242400666BBB /* UIPressViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E4F685A1D63242400666BBB /* UIPressViewController.swift */; };
 		0E4F685D1D63249D00666BBB /* UIPressCellViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E4F685C1D63249D00666BBB /* UIPressCellViewController.swift */; };
+		0EEBD9031D64B720001CD327 /* UIPressDetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EEBD9021D64B720001CD327 /* UIPressDetailController.swift */; };
 		1A1540216CC8898FE7899166 /* Pods_Alyaoum24_IOSTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60A8E67DF33D350E6108B420 /* Pods_Alyaoum24_IOSTests.framework */; };
 		76D6187F611EE00C1A4413B5 /* Pods_Alyaoum24_IOSUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E915E5812D098271C772C38 /* Pods_Alyaoum24_IOSUITests.framework */; };
 		D898B8E1E9F1AA952F8B7E0D /* Pods_Alyaoum24_IOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF9F361884F8E4EA7038905E /* Pods_Alyaoum24_IOS.framework */; };
@@ -68,6 +69,7 @@
 		0E4F68581D630EC000666BBB /* Constant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
 		0E4F685A1D63242400666BBB /* UIPressViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIPressViewController.swift; sourceTree = "<group>"; };
 		0E4F685C1D63249D00666BBB /* UIPressCellViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIPressCellViewController.swift; sourceTree = "<group>"; };
+		0EEBD9021D64B720001CD327 /* UIPressDetailController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIPressDetailController.swift; sourceTree = "<group>"; };
 		54FB6DC1A1E651CB0ADD1E78 /* Pods-Alyaoum24-IOSUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Alyaoum24-IOSUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Alyaoum24-IOSUITests/Pods-Alyaoum24-IOSUITests.release.xcconfig"; sourceTree = "<group>"; };
 		5E915E5812D098271C772C38 /* Pods_Alyaoum24_IOSUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Alyaoum24_IOSUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		60A8E67DF33D350E6108B420 /* Pods_Alyaoum24_IOSTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Alyaoum24_IOSTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -177,6 +179,7 @@
 				0E4F681C1D6306D900666BBB /* ViewController.swift */,
 				0E4F685A1D63242400666BBB /* UIPressViewController.swift */,
 				0E4F685C1D63249D00666BBB /* UIPressCellViewController.swift */,
+				0EEBD9021D64B720001CD327 /* UIPressDetailController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -509,6 +512,7 @@
 				0E4F68521D63096B00666BBB /* UniqueID.swift in Sources */,
 				0E4F681D1D6306D900666BBB /* ViewController.swift in Sources */,
 				0E4F681B1D6306D900666BBB /* AppDelegate.swift in Sources */,
+				0EEBD9031D64B720001CD327 /* UIPressDetailController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

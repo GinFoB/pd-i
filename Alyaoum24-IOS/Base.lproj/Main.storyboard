@@ -19,7 +19,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hEh-SR-YyK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="42" y="211"/>
+            <point key="canvasLocation" x="-260" y="149"/>
         </scene>
         <!--Press View Controller-->
         <scene sceneID="fF2-Y4-gwd">
@@ -29,6 +29,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="sectionIndexBackgroundColor" red="0.28632601660000001" green="0.4926319234" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell1" rowHeight="167" id="7XF-9f-b1F" customClass="UIPressCellViewController" customModule="Alyaoum24_IOS" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="92" width="600" height="167"/>
@@ -38,15 +39,20 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eGb-AK-Ymt">
-                                            <rect key="frame" x="18" y="21" width="397" height="124.5"/>
+                                            <rect key="frame" x="18" y="21" width="301" height="126.5"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6kM-N0-WJf">
+                                            <rect key="frame" x="352" y="8" width="240" height="128"/>
+                                        </imageView>
                                     </subviews>
                                 </tableViewCellContentView>
                                 <connections>
+                                    <outlet property="UImage" destination="6kM-N0-WJf" id="BRp-Ln-4pC"/>
                                     <outlet property="titleUI" destination="eGb-AK-Ymt" id="mZN-kn-up2"/>
+                                    <segue destination="L0F-Jh-z6G" kind="show" identifier="detailPress" id="TAu-yg-D2P"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -59,7 +65,36 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2br-8I-j0z" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="752" y="194"/>
+            <point key="canvasLocation" x="446" y="-232"/>
+        </scene>
+        <!--Press Detail Controller-->
+        <scene sceneID="jHj-V8-xP4">
+            <objects>
+                <viewController id="L0F-Jh-z6G" customClass="UIPressDetailController" customModule="Alyaoum24_IOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="CkH-ho-zq9"/>
+                        <viewControllerLayoutGuide type="bottom" id="sI4-rf-SMA"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8dX-fM-btb">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rzh-iX-mx1">
+                                <rect key="frame" x="40" y="84" width="273" height="132"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="PTitle" destination="Rzh-iX-mx1" id="x5p-vV-dCR"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zz1-Mc-lIt" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1216" y="-145"/>
         </scene>
     </scenes>
 </document>

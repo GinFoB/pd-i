@@ -19,7 +19,9 @@ class UIPressCellViewController: UITableViewCell {
 
     
     @IBOutlet weak var titleUI: UILabel!
+
     
+    @IBOutlet weak var UImage: UIImageView!
 
     //func updateCell(){
         

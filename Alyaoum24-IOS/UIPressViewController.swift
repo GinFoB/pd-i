@@ -21,6 +21,7 @@ class UIPressViewController: UITableViewController {
        // tableView = UITableView(frame: view.frame)
        tableView.delegate = self
        tableView.dataSource = self
+       
    
 
        self.didLoadData()
@@ -44,30 +45,33 @@ class UIPressViewController: UITableViewController {
                 let data = json["posts"]
                 for (key, subJson) in data {
 
-                    var obj = RealmPost()
+                
+                    
+                    let thumbnail = subJson["thumbnail"]["url"].string
+                    let posts1 = RealmPost(title: subJson["title"].string!,image: thumbnail!,content: subJson["content_raw"].string!)
 
-                    if let bTitle = subJson["title"].string{
-                        obj._title = subJson["title"].string!
+                    self.posts += [posts1]
                     
-                        print("JSON HERE : "+obj._title!)
+                    
+                    dispatch_async(dispatch_get_main_queue(), {
                         
-                    }
+                        self.tableView.reloadData()
+                        
+                    })
+
                     
+//
                 }
                 
+         
             case .Failure(let error):
                 print("Request failed with error: \(error)")
             }
         }
-        let posts1 = RealmPost(title: "ABAC")
-        self.posts += [posts1]
+     
+        
 
-        dispatch_async(dispatch_get_main_queue(), {
-            // Update your UI here
-            self.tableView.reloadData()
-           
-        })
-    }
+           }
 
     
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
@@ -77,13 +81,12 @@ class UIPressViewController: UITableViewController {
     
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        print("COUNT : ",posts.count)
         return posts.count
     }
     
     private struct storyboard {
         static let cellReuseIdentifier = "cell1"
-        static let segueIdentifier = "postDetail"
+        static let segueIdentifier = "detailPress"
     }
     
     
@@ -94,10 +97,25 @@ class UIPressViewController: UITableViewController {
         let post = posts[indexPath.row]
       
         cell.titleUI.text = post._title
-              
+       // cell.UImage.image = UIImage(named: post._url!)
         
         return cell
     }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if segue.identifier == storyboard.segueIdentifier{
+            if let indexPath = tableView.indexPathForSelectedRow{
+                let post = posts[indexPath.row]
+                let postDetail = segue.destinationViewController as! UIPressDetailController
+                postDetail.posts = post
+                
+            }
+            
+            
+        }
+    }
+    
+
     
     
     

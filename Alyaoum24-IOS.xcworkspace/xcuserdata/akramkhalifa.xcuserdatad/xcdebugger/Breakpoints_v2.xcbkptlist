@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Alyaoum24-IOS/RealmPost.swift"
-            timestampString = "493120424.895422"
+            timestampString = "493142035.237259"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "76"
-            endingLineNumber = "76">
+            startingLineNumber = "78"
+            endingLineNumber = "78">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -40,7 +40,7 @@
                   moduleName = "Alyaoum24-IOS"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/akramkhalifa/Documents/IOS/Alyaoum24-IOS/Alyaoum24-IOS/ViewController.swift"
-                  timestampString = "493120868.147246"
+                  timestampString = "493142036.29272"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "13"
@@ -55,7 +55,7 @@
                   moduleName = "Alyaoum24-IOS"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/akramkhalifa/Documents/IOS/Alyaoum24-IOS/Alyaoum24-IOS/ViewController.swift"
-                  timestampString = "493120868.147407"
+                  timestampString = "493142036.292885"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "13"
@@ -72,12 +72,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Alyaoum24-IOS/UIPressViewController.swift"
-            timestampString = "493120867.085811"
+            timestampString = "493141837.591183"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "73"
-            endingLineNumber = "73"
-            landmarkName = "didLoadData()"
+            startingLineNumber = "77"
+            endingLineNumber = "77"
+            landmarkName = "numberOfSectionsInTableView(_:)"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
